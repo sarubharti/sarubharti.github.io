@@ -1,18 +1,75 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    /* This ensures the light purple covers the whole background */
+    background-color: #f3e5f5; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header - Dark Theme */
+header {
+    background: #2d1b4d; 
+    color: #e1bee7; 
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Passport Size Image Fix */
+.profile-pic {
+    /* Fixed 'Passport' size on desktop */
+    width: 150px; 
+    height: 180px; 
+    /* Ensures it scales down on small mobile screens */
+    max-width: 40vw; 
+    max-height: 50vw;
+    
+    border-radius: 8px; /* Slightly rounded corners for a modern look */
+    border: 3px solid #9c27b0;
+    object-fit: cover; /* Prevents stretching */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+h1 { 
+    margin: 0; 
+    font-size: 2.5rem; 
+    color: #ffffff;
+}
+
+.subtitle { 
+    font-size: 1.1rem; 
+    font-weight: 300;
+}
+
 /* Social & Professional Links */
 .social-links {
     margin-top: 25px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap; /* Wraps on mobile */
+    gap: 15px;
 }
 
 .social-links a {
     color: #e1bee7;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     border: 1px solid #9c27b0;
-    padding: 8px 16px;
+    padding: 6px 14px;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
@@ -20,4 +77,44 @@
 .social-links a:hover {
     background: #9c27b0;
     color: white;
+}
+
+/* Sections - Card Style */
+section {
+    background: #ffffff;
+    margin: -30px 0 40px 0; /* Overlap effect */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+section + section {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #4a148c;
+    border-left: 5px solid #9c27b0;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.list-items {
+    list-style: none;
+    padding: 0;
+}
+
+.list-items li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.list-items li:last-child { border-bottom: none; }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.85rem;
+    color: #6a1b9a;
 }
