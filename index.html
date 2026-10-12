@@ -13,7 +13,7 @@
             <img src="your-photo.jpg" alt="Saru" class="profile-pic">
             <h1>Saru Bharti</h1>
             <p class="university">Purdue University</p>
-            <p class="subtitle">Robotics and Perception Researcher | MS in Data Science</p>
+            <p class="subtitle">Robotics and Perception Researcher | Master of Science</p>
             
             <div class="social-links">
                 <a href="mailto:bharti3@purdue.edu">Email</a>
@@ -25,30 +25,165 @@
         <section id="bio">
             <h2>Biography</h2>
             <p>
-                I am a researcher at <strong>Purdue University</strong> focused on the intersection of <strong>robotics, neuromorphic vision, and multimodal perception</strong>. 
-                My work centers on developing intelligent systems that can "see" and "sense" in challenging environments using unconventional sensors. 
-                Specifically, I specialize in <strong>mmWave radar</strong> calibration and object detection, as well as <strong>event-based cameras</strong> 
-                for high-speed neuromorphic vision. I leverage Reinforcement Learning and Control Theory to bridge the gap between complex 
-                perception and robotic locomotion.
+                I am a researcher at <strong>Purdue University</strong> focused on the intersection of <strong>robotics, neuromorphic vision, and multimodal perception</strong>.
+                My work centers on using non-conventional sensing modalities as perception tools for intelligent systems that can "see" and "sense"
+                in challenging environments. This spans object detection, terrain and material classification, and high-speed neuromorphic vision.
+                I leverage Reinforcement Learning and Control Theory to bridge the gap between complex perception and robotic locomotion.
             </p>
         </section>
 
         <section id="publications">
             <h2>Publications</h2>
-            <ul class="list-items">
+
+            <div class="project-item">
+                <div class="project-image"><img src="eecvs.jpg" alt="Efficient Event Camera Volume System"></div>
+                <div class="project-info">
+                    <div class="project-title"><a href="https://arxiv.org/abs/2603.14738" target="_blank" rel="noopener">Efficient Event Camera Volume System</a></div>
+                    <div class="project-authors">J.C. Soto*, I. Noronha*, <strong>S. Bharti</strong>, U. Kaur</div>
+                    <div class="project-meta">ICRA 2026</div>
+                    <p class="project-desc">Represents each event as a Dirac impulse projected onto DCT, DTFT, and DWT basis functions for dense, compressed event volumes.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-image"><img src="system_architecture_new.png" alt="Keyword spotting system architecture"></div>
+                <div class="project-info">
+                    <div class="project-title"><a href="https://ieeexplore.ieee.org/document/10724682" target="_blank" rel="noopener">Keyword spotting using convolutional neural network for speech recognition in Hindi</a></div>
+                    <div class="project-authors"><strong>S. Bharti</strong>, P.M. Pathak</div>
+                    <div class="project-meta">ICCCNT 2024</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="workshop">
+            <h2>Workshop &amp; Poster Presentations</h2>
+
+            <div class="project-item">
+                <div class="project-image"><img src="quadforecaster.gif" alt="QuadForecaster quadruped pose prediction"></div>
+                <div class="project-info">
+                    <div class="project-title"><a href="https://openreview.net/forum?id=tqSRcqCpqJ" target="_blank" rel="noopener">QuadForecaster: Diffusion-Based Quadruped Pose Prediction for Animal Communication Analysis</a></div>
+                    <div class="project-authors">I. Noronha*, A. Chowdhury*, <strong>S. Bharti</strong>, U. Kaur</div>
+                    <div class="project-meta">NeurIPS 2025 Workshop</div>
+                    <p class="project-desc">A diffusion model that forecasts animal poses ahead of time, used as a planning signal for robots monitoring animal behavior.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-image"><img src="mmwave.jpg" alt="Feel the Ground terrain classification"></div>
+                <div class="project-info">
+                    <div class="project-title">Feel the Ground: Radar-based Terrain Classification towards Gait Adaptation in Legged Robots</div>
+                    <div class="project-authors"><strong>S. Bharti</strong>, I. Noronha, G. Torres, U. Kaur</div>
+                    <div class="project-meta">IROS LBR 2026</div>
+                    <p class="project-desc">Uses mmWave radar point clouds to classify terrain underfoot, feeding gait adaptation for legged robots.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-image"><img src="field.gif" alt="FieldSense plant disease detection"></div>
+                <div class="project-info">
+                    <div class="project-title">FieldSense: Real-Time Plant Disease Detection for Precision Agriculture</div>
+                    <div class="project-authors"><strong>S. Bharti*</strong>, I. Noronha*, J.C. Soto*, A. Raturi, D.R. Buckmaster, U. Kaur</div>
+                    <div class="project-meta">ASABE AIM 2026 (Oral)</div>
+                    <p class="project-desc">A two-stage leaf segmentation and disease classification pipeline running in real time on a Raspberry Pi.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-image"><img src="grain.jpg" alt="MM-Wave radar cavity detection in grain storage"></div>
+                <div class="project-info">
+                    <div class="project-title">MM-Wave Radar Identification of Cavities in Grain Storage Systems to Prevent Entrapment</div>
+                    <div class="project-authors"><strong>S. Bharti</strong>, I. Noronha, A. Agarwal, S.N. Doctor, R.P.K. Ambrose, U. Kaur</div>
+                    <div class="project-meta">ASABE AIM 2026 (Oral)</div>
+                    <p class="project-desc">Fuses RGBD and mmWave radar to spot hidden cavities and deformities beneath grain surfaces, a safety hazard for storage workers.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="in-preparation">
+            <h2>Manuscripts in Preparation</h2>
+
+            <div class="project-item">
+                <div class="project-image"><img src="emotion.jpg" alt="E-motion neuromorphic event generation"></div>
+                <div class="project-info">
+                    <div class="project-title">E-motion: High Fidelity Event Generation from Frame-Based Input for Neuromorphic Vision</div>
+                    <div class="project-authors">I. Noronha, J.C. Soto, <strong>S. Bharti</strong>, S. Singh, P. Chitiveli, J. Wachs, U. Kaur</div>
+                    <div class="project-meta">WACV 2026</div>
+                    <p class="project-desc">Generates synthetic event streams from ordinary frame sequences, using dual decoders for event occurrence and microsecond-precise timing.</p>
+                </div>
+            </div>
+
+            <!-- Commented out Beyond the Turing Test as requested -->
+            <!--
+            <div class="project-item">
+                <div class="project-info">
+                    <div class="project-title">Beyond the Turing Test: A Game Theoretic Approach to LLM-Assisted Submissions</div>
+                    <div class="project-authors"><strong>S. Bharti</strong>, I. Noronha</div>
+                    <div class="project-meta">NeurIPS 2026</div>
+                </div>
+            </div>
+            -->
+
+            <div class="project-item">
+                <div class="project-image"><img src="elevation.jpg" alt="Elevation from Range radar-camera calibration"></div>
+                <div class="project-info">
+                    <div class="project-title">Elevation from Range: Cold-start mmWave Radar-Camera Calibration</div>
+                    <div class="project-authors"><strong>S. Bharti*</strong>, I. Noronha*, G. Torres, U. Kaur</div>
+                    <div class="project-meta">RA-L</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="patents">
+            <h2>Patents</h2>
+            <ul class="list-items bulleted">
                 <li>
-                    <strong>Efficient Event Camera Volume System</strong><br>
-                    J. Soto*, I. Noronha*, <strong>S. Bharti</strong>, U. Kaur | <em>ICRA 2026</em>
+                    <strong>mmWave Radar System with AI for Sub-Wavelength Detection of Hidden Small Organisms</strong><br>
+                    U. Kaur, <strong>S. Bharti</strong>, I. Noronha, M. Murgia, C. Hill | <em>US Provisional Patent</em>
                 </li>
                 <li>
-                    <strong>QuadForecaster: Diffusion-Based Quadruped Pose Prediction for Animal Communication Analysis</strong><br>
-                    I. Noronha*, A. Chowdhury*, <strong>S. Bharti</strong>, U. Kaur | <em>NeurIPS 2025 Workshop</em>
+                    <strong>Radar-Based System and Method for Detecting Structural Anomalies in Granular Materials</strong><br>
+                    U. Kaur, <strong>S. Bharti</strong>, I. Noronha, R.P.K. Ambrose | <em>US Provisional Patent</em>
                 </li>
                 <li>
-                    <strong>Keyword spotting using convolutional neural network for speech recognition in Hindi</strong><br>
-                    <strong>S. Bharti</strong>, P.M. Pathak | <em>ICCCNT 2024</em>
+                    <strong>Millimeter-Wave Ground Condition Sensing for Adaptive Robot and Machinery Operation</strong><br>
+                    U. Kaur, <strong>S. Bharti</strong>, I. Noronha | <em>US Provisional Patent</em>
+                </li>
+                <li>
+                    <strong>Joint Calibration and Fusion of Complementary Millimeter-Wave Radars and a Camera</strong><br>
+                    U. Kaur, <strong>S. Bharti</strong>, I. Noronha | <em>US Provisional Patent</em>
                 </li>
             </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-item">
+                <div class="project-image"><img src="hexapod.gif" alt="Hexapod reinforcement learning and path planning"></div>
+                <div class="project-info">
+                    <div class="project-title">Hexapod RL &amp; Path Planning</div>
+                    <div class="project-meta">Course Project, Purdue University</div>
+                    <p class="project-desc">Trained actor-critic PPO policies for hexapod and tripod gaits and paired them with RRT* planning on a custom 3D-printed robot platform.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-image"><img src="tara.jpg" alt="TARA non-contact patient registration system"></div>
+                <div class="project-info">
+                    <div class="project-title">TARA: Non-Contact Patient Registration System</div>
+                    <div class="project-meta">Robotics and Control Lab, IIT Roorkee</div>
+                    <p class="project-desc">Contributed to a voice-driven, contactless patient registration system with regional-language speech recognition, later deployed in clinics. The work grew into Robolife Ltd., a faculty-led startup.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-image"><img src="qnafnet.jpg" alt="Quantized NAFNet"></div>
+                <div class="project-info">
+                    <div class="project-title">Quantized NAFNet: Image Deblurring on Constrained Hardware</div>
+                    <div class="project-meta">8-bit Quantization-Aware Training &amp; Structural Pruning</div>
+                    <p class="project-desc">Compressed a NAFNet deblurring model from 259MB to 14.5MB, reaching 16&times; faster inference in software and 40&times; on hardware while keeping 95% of the original accuracy.</p>
+                </div>
+            </div>
         </section>
 
         <section id="awards">
